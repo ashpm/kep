@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JS Bin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <span id='bottombar'>
+        <span class="zooped">
+            <span class="start">START</span>
+        </span>
+    </span>
+
+
+    <div id='container'>
+
+
+        <div class="window" id="head" onmousedown='mydragg.startMoving(this,"container",event);' onmouseup='mydragg.stopMoving("container");'>
+            <div class="toolbar"><span class="title">HEAD.PNG</span><a style="text-decoration: none;" href="#container"><span class="close">⨯</span></a></div>
+            <div class="content">
+                <img class="refimg" src="head.png" alt="">
+            </div>
+        </div>
+
+        <div class="window" id="back" onmousedown='mydragg.startMoving(this,"container",event);' onmouseup='mydragg.stopMoving("container");'>
+            <div class="toolbar"><span class="title">BACK.PNG</span><span class="close">⨯</span></div>
+            <div class="content">
+                <img class="refimg" src="back.png" alt="">
+            </div>
+        </div>
+
+        <div class="window" id="front" onmousedown='mydragg.startMoving(this,"container",event);' onmouseup='mydragg.stopMoving("container");'>
+            <div class="toolbar"><span class="title">FRONT.PNG</span><span class="close">⨯</span></div>
+            <div class="content">
+                <img class="refimg" src="front.png" alt="">
+            </div>
+        </div>
+
+        <div class="window" id="infobox" onmousedown='mydragg.startMoving(this,"container",event);' onmouseup='mydragg.stopMoving("container");'>
+            <div class="toolbar"><span class="title">INFO</span><a style="text-decoration: none;" href="#container"><span class="close">⨯</span></a></div>
+            <div class="content">
+                <p>
+                    art by <a href="https://twitter.com/hornedpup">@hornedpup</a> on twitter
+                </p>
+                <p>
+                    character by <a href="https://twitter.com/cryptten">@cryptten</a> on twitter
+                </p>
+                <p>
+                    website by me 
+                </p>
+                <p>
+                    click the image below to open/download the full reference sheet 
+                </p>
+                
+            </div>
+        </div>
+
+        <div class="window" id="nsfw" onmousedown='mydragg.startMoving(this,"container",event);' onmouseup='mydragg.stopMoving("container");'>
+            <div class="toolbar"><span class="title">NSFW</span><a style="text-decoration: none;" href="#container"><span class="close">⨯</span></a></div>
+            <div class="content">
+                <p>
+                    nsfw refs
+                </p>
+                
+            </div>
+        </div>
+
+        <div class="window" id="warning" onmousedown='mydragg.startMoving(this,"container",event);' onmouseup='mydragg.stopMoving("container");'>
+            <div class="toolbar"><span class="title">WARNING</span><a style="text-decoration: none;" href="#container"><span class="close">⨯</span></a></div>
+            <div class="content">
+                <p>
+                    <img src="warning.png" alt=""> WARNING!
+                </p>
+                <p>
+                    this will open the NSFW version of the reference sheet. this is not suitable for those under the age of 18.
+                </p>
+                <p>
+                    do you wish to proceed? <a style="text-decoration: none;" href="#nsfw" class="choice" id="yes">yes</a> <a style="text-decoration: none;" href="#content" class="choice" id="no">no</a>
+                </p>
+                
+            </div>
+        </div>
+
+
+        <div class="icon" id="trash">
+            <a href="#warning">
+                <img class="iconimg" src="trash.png" style="width: 150%" alt="">
+            </a>
+        </div>
+
+        <div class="icon" id="info">
+            <a href="#infobox">
+                <img class="iconimg" src="info.png" style="width: 150%" alt="">
+            </a>
+        </div>
+
+        
+
+    </div>
+    <span></span>
+    
+
+    
+        
+
+
+</body>
+</html>
