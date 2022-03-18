@@ -107,7 +107,7 @@ html {background-color: #3a3a3a}
     z-index: 1;
   }
   #collar {
-    height: 30% !important;
+    height: 25% !important;
     top: 17%;
     left: 56%;
     z-index: 1;
@@ -119,6 +119,13 @@ html {background-color: #3a3a3a}
     left: 80%;
     z-index: 1;
   }
+.content {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 .colourlist {
   font-family: 'Syne Mono', monospace;
   font-size: large;
