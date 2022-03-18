@@ -1,21 +1,65 @@
 html {background-color: #3a3a3a}
 
+.refdownload:hover {
+    filter: brightness(1.2);
+    filter: invert(0.1)
+}
+
 #container {
     position: absolute;
-    background-color: rgb(0,117,117);
+    background-color:#E2EBF2;
+    background-image: 
+    linear-gradient(#ADC3D4 4px, transparent 2px),
+    linear-gradient(90deg, #ADC3D4 4px, transparent 2px);
+    background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+    background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px;
+    border: 5px solid #003A68;
     width: 90%;
     height: 90%;
     top:5%;
     left:5%;
   }
+
 #bottombar {
     position: absolute;
-    background-color: rgb(182,192,193);
+    background-color: #B7CBDA;
+    width: 90%;
+    height: 6%;
+    top: 90%;
+    left:5%;
+    border: 5px solid #003A68;
+    z-index: 1000;
+  }
+
+#topbar {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-family: 'Syne Mono', monospace;
+    position: absolute;
+    background-color: #B7CBDA;
     width: 90%;
     height: 4%;
-    top:95%;
+    top: 5%;
     left:5%;
+    border: 5px solid #003A68;
+    z-index: 1000;
   }
+.topbarname {
+    font-size: xx-large;
+    color: #003A68;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.topbarinfo {
+  font-size: x-large;
+  color: #003A68;
+  padding-left: 1%;
+  padding-right: 1%;
+}
 
   p {
     font-family: 'Syne Mono', monospace;
@@ -27,36 +71,120 @@ html {background-color: #3a3a3a}
     flex-direction: column;
     font-family: 'Syne Mono', monospace;
     position: absolute;
-    background-color: rgb(182,192,193);
-    border: 1px outset rgb(182,192,193);
+    background-color: #C8DCEC;
+    border: 5px solid #003A68;
     text-align: center;
-    height: 79%;
+    height: 60%;
     top: 10%;
-    width: 5%;
-    left: 1%;
+    width: 8%;
+    left: 0.5%;
   }
   .start {
     position: relative;
-    font-size: larger;
+    font-size: xx-large;
+    color: #003A68;
+  }
+  .start:hover {
+    position: relative;
+    font-size: xx-large;
+    color: #003A68;
+    background-color: #a5b5c2;
   }
   #front {
-    top: 20%;
-    left: 20%;
+    top: 15%;
+    left: 34%;
     z-index: 3;
   }
-
   #back {
-    top: 15%;
-    left: 38%;
+    top: 20%;
+    left: 15%;
     z-index: 2;
   }
-
   #head {
     height: 35% !important;
-    top: 10%;
+    top: 50%;
     left: 65%;
     z-index: 1;
   }
+  #collar {
+    height: 30% !important;
+    top: 17%;
+    left: 56%;
+    z-index: 1;
+  }
+  #colours {
+    height: 39% !important;
+    width: 10% !important;
+    top: 8%;
+    left: 80%;
+    z-index: 1;
+  }
+.colourlist {
+  font-family: 'Syne Mono', monospace;
+  font-size: large;
+  display: inline;
+}
+
+.clr {
+  display: inline;
+  padding-left: 20%;
+  min-width: 40%;
+}
+
+#c1 {
+  color: #151131;
+  background-color: #151131;
+}
+#c2 {
+  color: #1F1C45;
+  background-color: #1F1C45;
+}
+#c3 {
+  color: #333060;
+  background-color: #333060;
+}
+#c4 {
+  color: #61517D;
+  background-color: #61517D;
+}
+#c5 {
+  color: #815862;
+  background-color: #815862;
+}
+#c6 {
+  color: #C89178;
+  background-color: #C89178;
+}
+#c7 {
+  color: #D9ADB4;
+  background-color: #D9ADB4;
+}
+#c8 {
+  color: #F7E4CD;
+  background-color: #F7E4CD;
+}
+#c9 {
+  color: #EC9A88;
+  background-color: #EC9A88;
+}
+#c10 {
+  color: #200E09;
+  background-color: #200E09;
+}
+#c11 {
+  color: #331D18;
+  background-color: #331D18;
+}
+#c12 {
+  color: #62423A;
+  background-color: #62423A;
+}
+#c13 {
+  color: #A6E7EE;
+  background-color: #A6E7EE;
+}
+
+
 
   #infobox {
     top: 25%;
@@ -107,8 +235,8 @@ html {background-color: #3a3a3a}
   .window {
     position: absolute;
     z-index: 9;
-    background-color: rgb(182,192,193);
-    border: 3px outset rgb(182,192,193);
+    background-color: #C8DCEC;
+    border: 5px solid #003A68;
     text-align: center;
     width : 20%;
     height: 50%;
@@ -122,21 +250,32 @@ html {background-color: #3a3a3a}
 
   #info {
     position: absolute;
-    bottom: 20%;
+    bottom: 10%;
     right: 0;
-    padding: 3%;
+    margin: 3%;
+  }
+
+  .iconimg:hover {
+    filter: brightness(1.2);
+    filter: invert(0.2)
   }
 
   #trash {
     position: absolute;
-    bottom: 0;
+    bottom: 2%;
     right: 0;
     padding: 3%;
   }
 
   .refimg {
     position: relative;
-    width: 76%;
+    width: 80%;
+    padding: 2%
+  }
+
+  .headimg {
+    position: relative;
+    width: 72%;
     padding: 2%
   }
   
@@ -150,8 +289,9 @@ html {background-color: #3a3a3a}
     padding: 1px;
     cursor: move;
     z-index: 10;
-    background-color: rgb(1,0,157);
-    color: #fff;
+    border-bottom: 5px solid #003A68;
+    background-color: #6D8AA0;
+    color: #c6d9e9;
     font-family: 'Syne Mono', monospace;
   }
   .title {
@@ -161,5 +301,5 @@ html {background-color: #3a3a3a}
   .close {
     padding-right: 10px;
     font-size: x-large;
-    color: rgb(182,192,193);
+    color: #003A68;
   }
