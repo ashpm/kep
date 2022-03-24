@@ -21,15 +21,16 @@
 
     <span id='bottombar'>
         <span class="zooped">
-            <span class="start">START</span>
+            <a href="#startwindow" style="text-decoration: none">
+                <span class="start">START</span>
+            </a>
         </span>
     </span>
 
     <div id='container'>
 
-
         <div class="window" id="head" onmousedown='mydragg.startMoving(this,"container",event);' onmouseup='mydragg.stopMoving("container");'>
-            <div class="toolbar"><span class="title">HEADSHOT.PNG</span><a style="text-decoration: none;" href="#container"><span class="close">⨯</span></a></div>
+            <div class="toolbar"><span class="title" style="text-decoration: none">HEADSHOT.PNG</span><a style="text-decoration: none;" href="#container"><span class="close">⨯</span></a></div>
             <div class="content">
                 <img class="headimg" src="head.png" alt="">
             </div>
@@ -102,7 +103,13 @@
             <div class="toolbar"><span class="title">NSFW</span><a style="text-decoration: none;" href="#container"><span class="close">⨯</span></a></div>
             <div class="content">
                 <p>
-                    nsfw refs
+                    links to NSFW reference sheets on furAffinity
+                </p>
+                <p class="nsfwrefs">
+                    <a href="https://www.furaffinity.net/view/46474968/" style="padding-right: 5%"><img class="iconimg" src="link.png" alt="" style="display: linline"></a> masculine reference sheet
+                </p>
+                <p class="nsfwrefs">
+                    <a href="https://www.furaffinity.net/view/46474990/" style="padding-right: 5%"><img class="iconimg" src="link.png" alt="" style="display: linline; padding-right: 5%"></a> feminine reference sheet
                 </p>
                 
             </div>
@@ -124,6 +131,26 @@
             </div>
         </div>
 
+        <div class="window" id="startwindow">
+            <div class="toolbar"><span class="title">START</span><a style="text-decoration: none;" href="#container"><span class="close">⨯</span></a></div>
+                <div class="startmenu">
+                    <a href="https://twitter.com/kepwoof" class="startitem">
+                        <img src="web.png" class="iconimg" style="padding-right: 10%;"><p>twitter</p>
+                    </a>
+                    <a href="https://twitter.com/after_darker_" class="startitem">
+                        <img src="web-lock.png" class="iconimg" style="padding-right: 10%"><p>twitter AD</p>
+                    </a>
+                    <a href="https://t.me/kepwoof" class="startitem">
+                        <img src="phone.png" class="iconimg" style="padding-right: 10%"><p>telegram</p>
+                    </a>
+                    <a href="https://www.furaffinity.net/user/kepwoof/" class="startitem">
+                        <img src="art.png" class="iconimg" style="padding-right: 10%"><p>furAffinity</p>
+                    </a>
+                </div>
+                
+            
+        </div>
+
 
         <div class="icon" id="trash">
             <a href="#warning">
@@ -138,7 +165,6 @@
         </div>
         
     </div>
-    <span></span>
 
 </body>
 </html>

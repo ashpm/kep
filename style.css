@@ -20,6 +20,35 @@ html {background-color: #3a3a3a}
     left:5%;
   }
 
+  #startwindow {
+    visibility: hidden;
+    height: 45% !important;
+    bottom: 6%;
+    left: 0%;
+  }
+  .startmenu{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .startitem{
+    padding-left: 5%;
+    min-width: 95%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    text-decoration: none;
+    color: black;
+  }
+  #startwindow:target {
+    visibility: visible;
+    z-index: 500;
+  }
+  .startitem:hover {
+    background-color: #a5b5c2
+  }
+
 #bottombar {
     position: absolute;
     background-color: #B7CBDA;
@@ -282,7 +311,7 @@ html {background-color: #3a3a3a}
 
   .headimg {
     position: relative;
-    width: 72%;
+    width: 68%;
     padding: 2%
   }
   
@@ -309,4 +338,12 @@ html {background-color: #3a3a3a}
     padding-right: 10px;
     font-size: x-large;
     color: #003A68;
+  }
+
+  .nsfwrefs {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
   }
