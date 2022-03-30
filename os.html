@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>kepOS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    
+</head>
+<body>
+
+
+    <div id="kepos">
+        <span id='topbar'>
+            <div class="topbarname">KEPLER</div>
+            <div class="topbarinfo">THEY/THEM</div>
+            <div class="topbarinfo">AUSSIE SHEP</div>
+        </span>
+
+        <span id='bottombar'>
+            <span class="zooped">
+                <a href="#startwindow" style="text-decoration: none">
+                    <span class="start">START</span>
+                </a>
+            </span>
+        </span>
+
+        <div id='container'>
+
+            <div class="window" id="head" onmousedown='mydragg.startMoving(this,"container",event);' onmouseup='mydragg.stopMoving("container");'>
+                <div class="toolbar"><span class="title" style="text-decoration: none">HEADSHOT.PNG</span><a style="text-decoration: none;" href="#container"><span class="close">⨯</span></a></div>
+                <div class="content">
+                    <img class="headimg" src="head.png" alt="">
+                </div>
+            </div>
+
+            <div class="window" id="back" onmousedown='mydragg.startMoving(this,"container",event);' onmouseup='mydragg.stopMoving("container");'>
+                <div class="toolbar"><span class="title">BACK.PNG</span><span class="close">⨯</span></div>
+                <div class="content">
+                    <img class="refimg" src="back.png" alt="">
+                </div>
+            </div>
+
+            <div class="window" id="front" onmousedown='mydragg.startMoving(this,"container",event);' onmouseup='mydragg.stopMoving("container");'>
+                <div class="toolbar"><span class="title">FRONT.PNG</span><span class="close">⨯</span></div>
+                <div class="content">
+                    <img class="refimg" src="front.png" alt="">
+                </div>
+            </div>
+
+            <div class="window" id="collar" onmousedown='mydragg.startMoving(this,"container",event);' onmouseup='mydragg.stopMoving("container");'>
+                <div class="toolbar"><span class="title">COLLAR.PNG</span><span class="close">⨯</span></div>
+                <div class="content">
+                    <img class="refimg" src="collar.png" alt="" style="width: 60%">
+                </div>
+            </div>
+
+            <div class="window" id="colours" onmousedown='mydragg.startMoving(this,"container",event);' onmouseup='mydragg.stopMoving("container");'>
+                <div class="toolbar"><span class="title">COLOURS</span><span class="close">⨯</span></div>
+                    <div class="colourlist">
+                        <div class="clr" id="c1">xxx </div> #151131</br>
+                        <div class="clr" id="c2">xxx </div> #1F1C45</br>
+                        <div class="clr" id="c3">xxx </div> #333060</br>
+                        <div class="clr" id="c4">xxx </div> #61517D</br>
+                        <div class="clr" id="c5">xxx </div> #815862</br>
+                        <div class="clr" id="c6">xxx </div> #C89178</br>
+                        <div class="clr" id="c7">xxx </div> #D9ADB4</br>
+                        <div class="clr" id="c8">xxx </div> #F7E4CD</br>
+                        <div class="clr" id="c9">xxx </div> #EC9A88</br></br>
+                        <div class="clr" id="c10">xxx </div> #200E09</br>
+                        <div class="clr" id="c11">xxx </div> #331D18</br>
+                        <div class="clr" id="c12">xxx </div> #62423A</br>
+                        <div class="clr" id="c13">xxx </div> #A6E7EE</br>
+                    </div>
+            </div>
+
+            <div class="window" id="infobox" onmousedown='mydragg.startMoving(this,"container",event);' onmouseup='mydragg.stopMoving("container");'>
+                <div class="toolbar"><span class="title">INFO</span><a style="text-decoration: none;" href="#container"><span class="close">⨯</span></a></div>
+                <div class="content">
+                    <p>
+                        art by <a href="https://twitter.com/honeymoss_">@honeymoss_</a> on twitter
+                    </p>
+                    <p>
+                        character by <a href="https://twitter.com/cryptten">@cryptten</a> on twitter
+                    </p>
+                    <p>
+                        website by me 
+                    </p>
+                    <p>
+                        click the image below to open/download the full reference sheet 
+                    </p>
+                    <p>
+                        <a href="keplermain.png" download>
+                            <img class="refdownload" src="keplermain.png" alt="" style="width: 40%">
+                        </a>
+                    
+                </div>
+            </div>
+
+            <div class="window" id="nsfw" onmousedown='mydragg.startMoving(this,"container",event);' onmouseup='mydragg.stopMoving("container");'>
+                <div class="toolbar"><span class="title">NSFW</span><a style="text-decoration: none;" href="#container"><span class="close">⨯</span></a></div>
+                <div class="content">
+                    <p>
+                        links to NSFW reference sheets on furAffinity
+                    </p>
+                    <p class="nsfwrefs">
+                        <a href="https://www.furaffinity.net/view/46474968/" style="padding-right: 5%"><img class="iconimg" src="link.png" alt="" style="display: linline"></a> masculine reference sheet
+                    </p>
+                    <p class="nsfwrefs">
+                        <a href="https://www.furaffinity.net/view/46474990/" style="padding-right: 5%"><img class="iconimg" src="link.png" alt="" style="display: linline; padding-right: 5%"></a> feminine reference sheet
+                    </p>
+                    
+                </div>
+            </div>
+
+            <div class="window" id="warning" onmousedown='mydragg.startMoving(this,"container",event);' onmouseup='mydragg.stopMoving("container");'>
+                <div class="toolbar"><span class="title">WARNING</span><a style="text-decoration: none;" href="#container"><span class="close">⨯</span></a></div>
+                <div class="content">
+                    <p>
+                        <img src="warning.png" alt=""> WARNING!
+                    </p>
+                    <p>
+                        this will open the NSFW version of the reference sheet. this is not suitable for those under the age of 18.
+                    </p>
+                    <p>
+                        do you wish to proceed? <a style="text-decoration: none;" href="#nsfw" class="choice" id="yes">yes</a> <a style="text-decoration: none;" href="#content" class="choice" id="no">no</a>
+                    </p>
+                    
+                </div>
+            </div>
+
+            <div class="window" id="startwindow">
+                <div class="toolbar"><span class="title">START</span><a style="text-decoration: none;" href="#container"><span class="close">⨯</span></a></div>
+                    <div class="startmenu">
+                        <a href="https://photos.kep.dog" class="startitem">
+                            <img src="camera.png" class="iconimg" style="padding-right: 10%"><p>photography</p>
+                        </a>
+                        <a href="https://twitter.com/kepwoof" class="startitem">
+                            <img src="web.png" class="iconimg" style="padding-right: 10%;"><p>twitter</p>
+                        </a>
+                        <a href="https://twitter.com/after_darker_" class="startitem">
+                            <img src="web-lock.png" class="iconimg" style="padding-right: 10%"><p>twitter AD</p>
+                        </a>
+                        <a href="https://t.me/kepwoof" class="startitem">
+                            <img src="phone.png" class="iconimg" style="padding-right: 10%"><p>telegram</p>
+                        </a>
+                        <a href="https://www.furaffinity.net/user/kepwoof/" class="startitem">
+                            <img src="art.png" class="iconimg" style="padding-right: 10%"><p>furAffinity</p>
+                        </a>
+                        <a href="https://kep.dog" class="startitem">
+                            <img src="shutdown.png" class="iconimg" style="padding-right: 10%"><p>Power Off</p>
+                        </a>
+                    </div>
+                    
+                
+            </div>
+
+
+            <div class="icon" id="trash">
+                <a href="#warning">
+                    <img class="iconimg" src="trash.png" style="width: 150%" alt="">
+                </a>
+            </div>
+        </br>
+            <div class="icon" id="info">
+                <a href="#infobox">
+                    <img class="iconimg" src="info.png" style="width: 150%" alt="">
+                </a>
+            </div>
+            
+        </div>
+
+    </div>
+
+</body>
+</html>

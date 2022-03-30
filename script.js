@@ -5,6 +5,17 @@ var win = window,
     xMax = win.innerWidth || docElem.clientWidth || body.clientWidth,
     yMax = win.innerHeight|| docElem.clientHeight|| body.clientHeight;
 
+function showOS() {
+      var x = document.getElementById("kepos");
+      var y = document.getElementById("site");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+        y.style.display = "none";
+      } else {
+        x.style.display = "none";
+        y.style.display = "block";
+      }
+    }
 
 var mydragg = function() {
     return {
