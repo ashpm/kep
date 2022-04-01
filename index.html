@@ -4,10 +4,11 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>kepOS</title>
+    <title>kepler!</title>
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="mini1.png">
     <script src="script.js"></script>
     
 </head>
@@ -17,7 +18,10 @@
         <div class="section" id="hero">
             <div id="hello">
                 <h1>Hello!</h1>
-                <h2>I'm Kepler.</h2>
+                <h2>I'm <span
+                    class="txt-rotate"
+                    data-period="2000"
+                    data-rotate='["Kepler.", "a dog.", "a physicist.", "a photographer.", "gay.", "non-binary.", "in your computer."]'></span></h2>
             </div>
             <img id="heroimg" src="front.png" alt="">
         </div>
@@ -29,9 +33,9 @@
             </div>
             <div class="r">
                 <p class="desc">
-                    I'm a 20 year old student current living near London, UK <br/>
-                    I study Physics, specialising in machine learning and accelerator physics <br/>
-                    I'm also an amateur photographer for furry events: <a class='link' href='https://photos.kep.dog'>photos.kep.dog</a>
+                    I'm a 20 year old student current living near London, UK.<br/>
+                    I study Physics, specialising in machine learning and accelerator physics.<br/>
+                    I'm also an amateur photographer for furry events: <a class='link' href='https://photos.kep.dog'>photos.kep.dog</a>.
 
                 </p>
             </div>
@@ -43,33 +47,61 @@
                 <img class="miniicon" src='mini2.png'>
             </div>
             <div class="r">
-                <a href="https://t.me/kepwoof" style="text-decoration: none;">
-                    <div class="social" style="text-decoration: none;">
-                        <span class="socialname">telegram</span><span class="socialaddr">@kepwoof</span>
-                    </div>
-                </a>
-                <a href="https://twitter.com/kepwoof" style="text-decoration: none;">
-                    <div class="social" style="text-decoration: none;">
-                        <span class="socialname">twitter</span><span class="socialaddr">@kepwoof</span>
-                    </div>
-                </a>
-                <a href="mailto:hi@kep.dog" style="text-decoration: none;">
-                    <div class="social" style="text-decoration: none;">
-                        <span class="socialname">email</span><span class="socialaddr">hi@kep.dog</span>
-                    </div>
-                </a>
+                <div class="socialcol">
+                    <a href="https://t.me/kepwoof" style="text-decoration: none;">
+                        <div class="social" style="text-decoration: none;">
+                            <span class="socialname">telegram</span><span class="socialaddr">@kepwoof</span>
+                        </div>
+                    </a>
+
+                    <a href="https://twitter.com/kepwoof" style="text-decoration: none;">
+                        <div class="social" style="text-decoration: none;">
+                            <span class="socialname">twitter</span><span class="socialaddr">@kepwoof</span>
+                        </div>
+                    </a>
+
+                    <a href="mailto:hi@kep.dog" style="text-decoration: none;">
+                        <div class="social" style="text-decoration: none;">
+                            <span class="socialname">email</span><span class="socialaddr">hi@kep.dog</span>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="socialcol">
+                    <a href="https://www.furaffinity.net/user/kepwoof/" style="text-decoration: none;">
+                        <div class="social" style="text-decoration: none;">
+                            <span class="socialname">furAffinity</span><span class="socialaddr">/kepwoof</span>
+                        </div>
+                    </a>
+
+                    <a href="https://e621.net/users/405768" style="text-decoration: none;">
+                        <div class="social" style="text-decoration: none;">
+                            <span class="socialname">e621</span><span class="socialaddr">/astralKepler</span>
+                        </div>
+                    </a>
+                    
+                </div>
             </div>
         </div>
 
-        <div class="section" id="aboutme">
+        <div class="section" id="aboutme" style="padding-bottom: 4vw">
             <div class="l">
                 <h4>draw <span class='white'>me</span></h4>
                 <img class="miniicon" src='mini3.png'>
             </div>
             <div class="r">
-                <button class="social" id="activate" onclick="location.href='/os.html'" type="button"> 
-                    <span class="socialname">kepOS</span><span class="socialaddr">activate</span>
-                </button>
+                <div class="socialcol">
+                    <button class="social" id="activate" onclick="location.href='/os.html'" type="button"> 
+                        <span class="socialname">kepOS</span><span class="socialaddr">activate</span>
+                    </button>
+                </div>
+                <div class="socialcol">
+                    <a href="keplermain.png" download="keplermain.png" style="text-decoration: none;">
+                        <div class="social" style="text-decoration: none;">
+                            <span class="socialname">refsheet</span><span class="socialaddr">download</span>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     
