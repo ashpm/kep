@@ -124,6 +124,7 @@ h2 {
   font-size: 3vw;
   margin-top: 0em;
   padding-top: 0;
+  padding-left: 2vw;
   
 }
 
@@ -145,6 +146,22 @@ h2 {
 .l {
   display: flex;
   flex-direction: row;
+}
+.r {
+  display: flex;
+  flex-direction: row;
+  width: 65vw;
+  flex-wrap: wrap;
+}
+.socialrcol {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: space-between;
+
+  max-width: 5vw;
+  min-width: 5vw;
+  width: 5vw;
 }
 h4 {
   font-family: 'Myriad Pro Semibold';
@@ -345,32 +362,34 @@ h4 {
     background-color: #a5b5c2;
   }
   #front {
-    top: 15%;
-    left: 34%;
+    top: 7vw;
+    left: 24vw;
+    height: 25vw;
     z-index: 3;
   }
   #back {
-    top: 20%;
-    left: 15%;
+    top: 10vw;
+    left: 8vw;
+    height: 25vw;
     z-index: 2;
   }
   #head {
-    height: 35% !important;
-    top: 50%;
-    left: 65%;
+    height: 20vw;
+    top: 21vw;
+    left: 52vw;
     z-index: 1;
   }
   #collar {
-    height: 25% !important;
-    top: 17%;
-    left: 56%;
+    height: 13vw;
+    top: 6vw;
+    left: 46vw;
     z-index: 1;
   }
   #colours {
-    height: 39% !important;
-    width: 10% !important;
-    top: 8%;
-    left: 80%;
+    height: 30vw;
+    width: 10vw;
+    top: 4vw;
+    left: 75vw;
     z-index: 1;
   }
 .content {
@@ -444,8 +463,6 @@ h4 {
   color: #A6E7EE;
   background-color: #A6E7EE;
 }
-
-
 
   #infobox {
     top: 25%;
