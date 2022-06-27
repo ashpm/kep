@@ -227,6 +227,14 @@ h4 {
   font-weight:bold;
   font-weight: 600;
 }
+
+.topic {
+  background-color: grey;
+  padding: 0.3em;
+  border-radius: 0.3em;
+  margin-inline-end: 1em;
+}
+
 #activate .socialaddr {
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
