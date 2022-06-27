@@ -152,6 +152,7 @@ h2 {
   flex-direction: row;
   width: 65vw;
   flex-wrap: wrap;
+  margin-top: 1em;
 }
 .socialrcol {
   display: flex;
@@ -187,9 +188,10 @@ h4 {
   font-weight: 100;
   color: white;
   font-size: 1.3em;
-  margin-bottom: 0;
   padding-left: 5vw;
   line-height: 2em;
+  margin-bottom: 0.7em;
+  margin-top: 0em;
 }
 .link {
   text-decoration: none;
